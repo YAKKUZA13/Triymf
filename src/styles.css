@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+}
+
+.main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.toolbar {
+    margin-bottom: 15px;
+}
+
+.insert-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+}
+
+.insert-btn:hover {
+    background-color: #45a049;
+}
+
+.editor-container {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#editor {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #e0e0e0;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #495057;
+}
+
+.templates-list {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.template-item {
+    background-color: #ffffff;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    border: 1px solid #e0e0e0;
+    color: #333;
+}
+
+.template-item:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+}
+
+.template-item.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.template-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: opacity 0.2s;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.add-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.control-btn:hover {
+    opacity: 0.8;
+}
+
+.edit-section h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #495057;
+}
+
+.edit-input {
+    width: 100%;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    color: #495057;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.edit-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.custom-dropdown {
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0 2px;
+    color: #495057;
+    cursor: pointer;
+    font-size: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.custom-dropdown select {
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.custom-dropdown.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+.tox-tinymce {
+    border-radius: 4px !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.tox .tox-editor-header {
+    background-color: #f8f9fa !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.tox .tox-toolbar__primary {
+    background-color: #f8f9fa !important;
+}
+
+.tox .tox-edit-area {
+    background-color: #ffffff !important;
+}
+
+.tox .tox-edit-area iframe {
+    background-color: #ffffff !important;
+} 
